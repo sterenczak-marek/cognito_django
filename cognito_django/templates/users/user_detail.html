@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}User: {{ object.username }}{% endblock %}
+
+{% block content %}
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12">
+
+        <dl class="row">
+          <dt class="col-sm-2">Username:</dt>
+          <dd class="col-sm-9">{{ object.username }}</dd>
+
+          <dt class="col-sm-2">Email:</dt>
+          <dd class="col-sm-9">{{ object.email }}</dd>
+
+          <dt class="col-sm-2">Name:</dt>
+          <dd class="col-sm-9">{{ object.name }}</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
+
